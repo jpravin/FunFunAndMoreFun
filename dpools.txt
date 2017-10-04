@@ -1,0 +1,6 @@
+# WARNING! Remove "#" characters to enable lines, with "#" they are disabled and will be ignored by miner! Check README for details.
+POOL: pasc-eu1.nanopool.org:15555, WALLET: 9b6f6f2ea74fcefe1fef1dfa49c1a2ffecfc301db09602df8827ec25ceaeeb7da0ad9a706ce7/avenger/pravinpuma@gmail.com, PSW: x, WORKER: , ESM: 0, ALLPOOLS: 0
+POOL: pasc-eu2.nanopool.org:15555, WALLET: 9b6f6f2ea74fcefe1fef1dfa49c1a2ffecfc301db09602df8827ec25ceaeeb7da0ad9a706ce7/avenger/pravinpuma@gmail.com, PSW: x, WORKER: , ESM: 0, ALLPOOLS: 0
+POOL: pasc-us-east1.nanopool.org:15555, WALLET: 9b6f6f2ea74fcefe1fef1dfa49c1a2ffecfc301db09602df8827ec25ceaeeb7da0ad9a706ce7/avenger/pravinpuma@gmail.com, PSW: x, WORKER: , ESM: 0, ALLPOOLS: 0
+#POOL: pasc-us-west1.nanopool.org:15555, WALLET: 9b6f6f2ea74fcefe1fef1dfa49c1a2ffecfc301db09602df8827ec25ceaeeb7da0ad9a706ce7/avenger/pravinpuma@gmail.com, PSW: x, WORKER: , ESM: 0, ALLPOOLS: 0
+POOL: pasc-asia1.nanopool.org:15555, WALLET: 9b6f6f2ea74fcefe1fef1dfa49c1a2ffecfc301db09602df8827ec25ceaeeb7da0ad9a706ce7/avenger/pravinpuma@gmail.com, PSW: x, WORKER: , ESM: 0, ALLPOOLS: 0
