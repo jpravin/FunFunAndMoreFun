@@ -383,3 +383,20 @@ ETH: GPU0 31.755 Mh/s, GPU1 31.834 Mh/s
 
 
 This is just a marginal increase. so am planning to stick with 1300 for now.
+
+step 13: reduce power
+
+
+sudo nvidia-smi -i 0 -pl 100
+sudo nvidia-smi -i 1 -pl 100
+
+current #rate:
+ETH - Total Speed: 62.889 Mh/s, Total Shares: 14, Rejected: 0, Time: 00:16
+ETH: GPU0 31.441 Mh/s, GPU1 31.447 Mh/s
+
+so reducing power had no effect on #rate!!! Thats super coolW
+
+special thanks to->
+
+https://gist.github.com/bsodmike/369f8a202c5a5c97cfbd481264d549e9
+
