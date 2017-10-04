@@ -31,5 +31,30 @@ There is an Linux installation guide. However, it is basically only those steps:
  6.   sudo sh cuda_9.0.176_384.81_linux.run --override. Make sure that you say y for the symbolic link.
         Start lightdm again: sudo service lightdm start
     Follow the command-line prompts
+ 7. once done it will complain about nouveau - lets restart
+
+ 8.  once restarted lets kill lightdm : step 3
+ 9.  then, sudo sh cuda_9.0.176_384.81_linux.run --override -> This time the installation will complete successfully
+
+u will see a summary like so
+
+===========
+= Summary =
+===========
+
+Driver:   Installed
+Toolkit:  Installed in /usr/local/cuda-9.0
+Samples:  Installed in /home/avenger, but missing recommended libraries
+
+Please make sure that
+ -   PATH includes /usr/local/cuda-9.0/bin
+ -   LD_LIBRARY_PATH includes /usr/local/cuda-9.0/lib64, or, add /usr/local/cuda-9.0/lib64 to /etc/ld.so.conf and run ldconfig as root
+
+To uninstall the CUDA Toolkit, run the uninstall script in /usr/local/cuda-9.0/bin
+To uninstall the NVIDIA Driver, run nvidia-uninstall
+
+Please see CUDA_Installation_Guide_Linux.pdf in /usr/local/cuda-9.0/doc/pdf for detailed information on setting up CUDA.
+
+Yeyyyy!!! now cuda 9 is installed !!
 
 
