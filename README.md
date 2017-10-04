@@ -57,4 +57,72 @@ Please see CUDA_Installation_Guide_Linux.pdf in /usr/local/cuda-9.0/doc/pdf for 
 
 Yeyyyy!!! now cuda 9 is installed !!
 
+You can run nvidia-smi 
 
+Tue Oct  3 23:09:09 2017       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 384.81                 Driver Version: 384.81                    |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  GeForce GTX 1070    Off  | 00000000:01:00.0 Off |                  N/A |
+|  0%   38C    P0    33W / 151W |      0MiB /  8110MiB |      2%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+
+
+
+Pooofff that was a long step4. Dont worry thats the hardest step. It will be fun from now on.
+
+Step5: Lets get claymore
+
+url = https://github.com/nanopool/Claymore-Dual-Miner/releases/download/v10.0/Claymore.s.Dual.Ethereum.Decred_Siacoin_Lbry_Pascal.AMD.NVIDIA.GPU.Miner.v10.0.-.LINUX.tar.gz
+
+wget <url> => brings the tar.gz
+
+Step6: Lets extract
+
+tar xvf <tar.gz> file
+
+step7: starting with eth config
+
+modify the stat_only_eth.bash 
+
+this line => ./ethdcrminer64 -epool eth-eu1.nanopool.org:9999 -ewal YOUR_WALLET/YOUR_WORKER/YOUR_EMAIL -epsw x -mode 1 -ftime 10 
+
+should look like this,
+
+./ethdcrminer64 -epool eth-eu1.nanopool.org:9999 -ewal 0xa90221e1ee66582dfd1bafc7c534e9e7ed6ab7ea/avenger/pravinpuma@gmail.com -epsw x -mode 2 -ftime 10
+
+be sure to change the eth_address!!! If not thank you for donations :) Highly appreciate it.
+
+
+step 8: lets fix teh pools
+
+in the above command lets change the pool
+
+i am in us-west hence switching the pool to => eth-us-west1.nanopool.org:9999
+
+and my epools.txt looks like,
+
+#POOL: eth-us-west1.nanopool.org:9999, WALLET: YOUR_WALLET/YOUR_WORKER/YOUR_EMAIL, PSW: x, WORKER: , ESM: 0, ALLPOOLS: 0
+POOL: eth-us-east1.nanopool.org:9999, WALLET: YOUR_WALLET/YOUR_WORKER/YOUR_EMAIL, PSW: x, WORKER: , ESM: 0, ALLPOOLS: 0
+POOL: eth-eu1.nanopool.org:9999, WALLET: YOUR_WALLET/YOUR_WORKER/YOUR_EMAIL, PSW: x, WORKER: , ESM: 0, ALLPOOLS: 0
+POOL: eth-eu2.nanopool.org:9999, WALLET: YOUR_WALLET/YOUR_WORKER/YOUR_EMAIL, PSW: x, WORKER: , ESM: 0, ALLPOOLS: 0
+POOL: eth-asia1.nanopool.org:9999, WALLET: YOUR_WALLET/YOUR_WORKER/YOUR_EMAIL, PSW: x, WORKER: , ESM: 0, ALLPOOLS: 0
+
+commented first one since am passing it as a param for ethdcrminer64
+
+
+Step 9:
+
+Now lets start the run and let it rain some ether
+
+./start_only_eth.bash 
