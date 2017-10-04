@@ -126,3 +126,15 @@ Step 9:
 Now lets start the run and let it rain some ether
 
 ./start_only_eth.bash 
+
+logs will look like this,
+
+ETH: 10/03/17-23:27:04 - SHARE FOUND - (GPU 0)
+ETH: Share accepted (165 ms)!
+ETH: 10/03/17-23:27:09 - New job from eth-us-west1.nanopool.org:9999
+ETH - Total Speed: 26.561 Mh/s, Total Shares: 2, Rejected: 0, Time: 00:00
+ETH: GPU0 26.561 Mh/s
+
+which means that we mean business!!
+
+
